@@ -28,6 +28,27 @@
         padding-top: 50%;
     }
 
+    .hero {
+      background-position: 43% 70%;
+    }
+
+    .splide {
+      height: 250px !important;
+    }
+
+    .splide__slide {
+      height: 250px !important;
+    }
+
+    #imgBackground {
+      position:absolute; /* Absolute Positioning so we can use "top" and "Left" */
+      top:0px; /* Set top edge to 0px (Top of the screen) */
+      left:0px; /* Set left edge of image to 0px, so it starts at the left edge of the screen. */
+      width:100%; /* We want our widt to be 100% of our browser window */
+      height:auto; /* we don't care about the image height, so let it set itself based on the image's proportions */
+      position:fixed; /* Make our image scroll with the user so if they can scroll they don't leave our background behind, exposing the white "body" tag background. */
+    }
+
     .header-nav {
         position: fixed;
         background-color: #000;
@@ -40,6 +61,10 @@
         opacity: 0;
         -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
         transition: opacity 0.5s, visibility 0s 0.5s;
+    }
+
+    .toggle {
+      transform: translate(139px, -95px);
     }
 
     ul.member-actions {
@@ -225,7 +250,7 @@
     .events .rightcol {
         padding: 0 20px;
     }
-    
+
     #eng-pics .img-wrap {
         border-radius: 0;
     }
@@ -233,10 +258,11 @@
     #map-content-wrapper {
         margin-bottom: 40px;
     }
-    
+
     #map-content {
         margin-top: 0;
         padding: 35px;
+        scale: 0.7;
     }
 
     .rsvp {
@@ -257,6 +283,10 @@
         padding-top: 100%;
     }
 
+    .toggle {
+      transform: translate(139px, -95px);
+    }
+
     #eng-pics .img-wrap i {
         font-size: 25px;
         position: absolute;
@@ -268,7 +298,7 @@
     #map-content-wrapper {
         margin-bottom: 0;
     }
-    
+
     footer ul.footer-group {
         border-top: none;
     }
@@ -295,7 +325,11 @@
     .hero .hero-content {
         padding-top: 110%;
     }
-    
+
+    .toggle {
+      transform: translate(139px, -95px);
+    }
+
     .hero .hero-content img {
         width: 65%;
     }

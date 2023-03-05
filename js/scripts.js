@@ -93,7 +93,7 @@ $(document).ready(function () {
                 $('section.navigation').addClass('fixed');
                 $('header').css({
                     "border-bottom": "none",
-                    "padding": "35px 0"
+                    "padding": "15px 0"
                 });
                 $('header .member-actions').css({
                     "top": "26px",
@@ -101,18 +101,38 @@ $(document).ready(function () {
                 $('header .navicon').css({
                     "top": "34px",
                 });
+                /*$('header .btn:focus').css({
+                  "color": "#fff",
+                  "border-color": "#a5b1b1",
+                  "background-color": "#a5b1b1",
+                });
+                $('header .btn:hover').css({
+                    "color": "#fff",
+                    "border-color": "#a5b1b1",
+                    "background-color": "#a5b1b1",
+                });*/
             } else {
                 $('section.navigation').removeClass('fixed');
                 $('header').css({
                     "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
-                    "padding": "50px 0"
+                    "padding": "21px 0"
                 });
                 $('header .member-actions').css({
-                    "top": "41px",
+                    "top": "25px",
                 });
                 $('header .navicon').css({
                     "top": "48px",
                 });
+                /*$('header .btn:focus').css({
+                  "color": "#fff",
+                  "border-color": "#bf8f7f",
+                  "background-color": "#bf8f7f",
+                });
+                $('header .btn:hover').css({
+                    "color": "#fff",
+                    "border-color": "#bf8f7f",
+                    "background-color": "#bf8f7f",
+                });*/
             }
         });
     });
@@ -137,29 +157,29 @@ $(document).ready(function () {
     });
 
     /********************** Social Share buttons ***********************/
-    var share_bar = document.getElementsByClassName('share-bar');
-    var po = document.createElement('script');
-    po.type = 'text/javascript';
-    po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(po, s);
-
-    for (var i = 0; i < share_bar.length; i++) {
-        var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
-            'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
-            'style="width:105px; height:21px;">' +
-            '</iframe>' +
-
-            '<iframe src="//www.facebook.com/plugins/like.php?href=' + encodeURIComponent(window.location) + '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=101094500229731&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>' +
-
-            '<div class="g-plusone" data-size="medium"></div>';
-
-        // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
-
-        share_bar[i].innerHTML = html;
-        share_bar[i].style.display = 'inline-block';
-    }
+    // var share_bar = document.getElementsByClassName('share-bar');
+    // var po = document.createElement('script');
+    // po.type = 'text/javascript';
+    // po.async = true;
+    // po.src = 'https://apis.google.com/js/platform.js';
+    // var s = document.getElementsByTagName('script')[0];
+    // s.parentNode.insertBefore(po, s);
+    //
+    // for (var i = 0; i < share_bar.length; i++) {
+    //     var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
+    //         'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
+    //         'style="width:105px; height:21px;">' +
+    //         '</iframe>' +
+    //
+    //         '<iframe src="//www.facebook.com/plugins/like.php?href=' + encodeURIComponent(window.location) + '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=101094500229731&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>' +
+    //
+    //         '<div class="g-plusone" data-size="medium"></div>';
+    //
+    //     // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
+    //
+    //     share_bar[i].innerHTML = html;
+    //     share_bar[i].style.display = 'inline-block';
+    // }
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
@@ -184,23 +204,23 @@ $(document).ready(function () {
         },
         data: {
             // Event title
-            title: "Ram and Antara's Wedding",
+            title: "Carelize&Marcel's Wedding",
 
             // Event start date
-            start: new Date('Nov 27, 2017 10:00'),
+            start: new Date('Dec 17, 2023 10:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Nov 29, 2017 00:00'),
+            end: new Date('Dec 19, 2023 10:00'),
 
             // Event Address
-            address: 'ITC Fortune Park Hotel, Kolkata',
+            address: 'Elandsfloof Farm Cottages',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any queries or issues, please contact Mr. Amit Roy at +91 9876543210."
+            description: "We can't wait to see you on our big day. For any queries or issues, please get in touch"
         }
     });
 
@@ -218,7 +238,7 @@ $(document).ready(function () {
             && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
             $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbxOAyQ4GKK50zhIMUWZshVpom7kYmUfKgrocsglbKEGUGWUD1CnnHFFqg7EJQzFtikaMA/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -240,11 +260,13 @@ $(document).ready(function () {
 /********************** Extras **********************/
 
 // Google map
+/*
 function initMap() {
-    var location = {lat: 22.5932759, lng: 88.27027720000001};
+    var location = {lat: -34.0490335, lng: 19.401515};
+    var cent = {lat: -34.022859, lng: 18.871425};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 15,
-        center: location,
+        zoom: 10.5,
+        center: cent,
         scrollwheel: false
     });
 
@@ -253,9 +275,9 @@ function initMap() {
         map: map
     });
 }
-
+*/
 function initBBSRMap() {
-    var la_fiesta = {lat: 20.305826, lng: 85.85480189999998};
+    var la_fiesta = {lat: -34.0490335, lng: 19.401515};
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
         center: la_fiesta,
@@ -491,3 +513,63 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
+
+
+
+/********************** index **********************/
+document.addEventListener( 'DOMContentLoaded', function () {
+  new Splide( '#image-carousel', {
+    type        : 'loop',
+    speed       : 11000,
+    cover       : true,
+    rewindByDrag: true,
+    interval    : 6000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    perPage     : 3,
+    autoplay    : true,
+		heightRatio : 0.4,
+    autoWidth   : true,
+    pagination  : true
+  } ).mount();
+} );
+
+'use strict';
+
+angular.module('cssPracticeApp', []).directive('toggleDiv', function () {
+    return {
+    	  replace: true,
+		    transclude: true,
+      	template: '<div ng-click="toggle()" ng-transclude></div>',
+      	restrict: 'A',
+      	scope: {
+      	},
+      	link: function postLink(scope, element, attrs) {
+
+      		// the class to toggle
+      		var t_c = attrs.toggleClass;
+
+      		// initialize the class
+  			  element.toggleClass(t_c, (attrs.toggleActive == 'true' ? true : false));
+
+  			// toggle the class
+			scope.toggle = function()
+			{
+				element.toggleClass(t_c);
+        classCheck();
+			};
+
+      	}
+    };
+});
+
+function classCheck(){
+ const elementClass = document.getElementById('tl');
+ if(elementClass.classList.contains('toggle-on')){
+  console.log("AFR");
+  translate('en', 'lng-tag');
+} else{
+  console.log("ENG");
+  translate('afr', 'lng-tag');
+}
+}
