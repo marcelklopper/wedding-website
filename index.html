@@ -352,7 +352,24 @@
                     <div class="section-padding">
                         <h3 lng-tag="dankie">Thank you!</h3>
                         <p lng-tag="dankie2">We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
+                        <div style="width: 50%; margin: auto; padding: 20px;">
+                        <add-to-calendar-button
+                          name="Carelize & Marcel's Wedding"
+                          description="We can't wait to see you on our big day. For any queries or issues, please get in touch"
+                          startDate="2023-12-17"
+                          startTime="14:30"
+                          endDate="2023-12-19"
+                          endTime="12:00"
+                          timeZone="Africa/Johannesburg"
+                          location="Elandskloof Farm Cottages"
+                          organizer="Marcel&Carelize|carelize.johani@gmail.com"
+                          availability="busy"
+                          options="'Apple','Google','Outlook.com'"
+                          buttonStyle="round"
+                          hideIconModal
+                          hideBackground
+                          ></add-to-calendar-button>
+                        </div>
                     </div>
                 </div>
             </div><!-- /.modal-content -->
@@ -500,5 +517,6 @@ window.addEventListener('load', () => {
     loaderContainer.classList.remove("loader");
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 </body>
 </html>
