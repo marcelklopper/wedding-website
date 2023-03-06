@@ -17,15 +17,6 @@
     <meta name="apple-mobile-web-app-title" content="Status Bar">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="stylesheet" href="css/loader.css">
-    <script>
-    const loaderContainer = document.querySelector('#loader');
-    const pager = document.querySelector('#allpage');
-    window.addEventListener('load', () => {
-        //loaderContainer.style.display = 'none';
-        pager.classList.remove("hideall");
-        loaderContainer.classList.remove("loader");
-    });
-    </script>
     <!-- <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -498,5 +489,14 @@
 <script src="js/translate.js"></script>
 <script src="js/scripts.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmTre1IuWuPOqYx2soq8bDAuSlcAvg3L8&callback=initMap"></script>
+<script>
+const loaderContainer = document.querySelector('#loader');
+const pager = document.querySelector('#allpage');
+window.addEventListener('load', () => {
+    //loaderContainer.style.display = 'none';
+    pager.classList.remove("hideall");
+    loaderContainer.classList.remove("loader");
+});
+</script>
 </body>
 </html>
