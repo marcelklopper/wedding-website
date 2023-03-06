@@ -35,11 +35,68 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide-core.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/themes/splide-default.min.css">
+    <style>
+    /* Center the loader */
+    #loader {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      width: 120px;
+      height: 120px;
+      margin: -76px 0 0 -76px;
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #C09E91;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
 
+    .hideall {
+      display: none;
+    }
+
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Add animation to "page content" */
+    .animate-bottom {
+      position: relative;
+      -webkit-animation-name: animatebottom;
+      -webkit-animation-duration: 1s;
+      animation-name: animatebottom;
+      animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+      from { bottom:-100px; opacity:0 }
+      to { bottom:0px; opacity:1 }
+    }
+
+    @keyframes animatebottom {
+      from{ bottom:-100px; opacity:0 }
+      to{ bottom:0; opacity:1 }
+    }
+
+    #myDiv {
+      display: none;
+      text-align: center;
+    }
+    </style>
 
 
 </head>
+<div id="loader"></div>
 <body id="top">
+<section id="allpage" class="hideall">
 <section class="hero">
     <section class="navigation">
         <header>
@@ -451,6 +508,8 @@
     </div>
 </footer>
 
+</section>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
@@ -464,6 +523,13 @@
 <script src="js/translate.js"></script>
 <script src="js/scripts.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmTre1IuWuPOqYx2soq8bDAuSlcAvg3L8&callback=initMap"></script>
-
+<script>
+const loaderContainer = document.querySelector('#loader');
+const pager = document.querySelector('#allpage');
+window.addEventListener('load', () => {
+    loaderContainer.style.display = 'none';
+    pager.classList.remove("hideall");
+});
+</script>
 </body>
 </html>
