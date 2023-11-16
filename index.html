@@ -60,7 +60,7 @@
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login" lng-tag="navmap">MAP</a></li>
-                            <a href="#rsvp" class="btn btn-accent btn-small rsvp-btn">RSVP</a>
+                            <a href="#" data-toggle="modal" data-target="#dc2-modal" class="btn btn-accent btn-small rsvp-btn">Questionnaire</a>
                         </ul>
                         <div class="lang-mobile">
                         <div id='toggle-floater'></div>
@@ -95,8 +95,8 @@
         </div>
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn cst-btn">RSVP</a></div>
+            <div class="col-sm-4 hidden-xs text-center"><a href="#" data-toggle="modal" data-target="#dc2-modal"
+                                                           class="btn btn-accent btn-large rsvp-btn cst-btn">PLEASE FILL ME IN</a></div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
@@ -147,11 +147,10 @@
                 <div class="wp3">
                     <p lng-tag="17dec"><strong>17<sup>th</sup> December</strong></p>
 
-                    <h5 lng-tag="17decH">Arrival <span class="time"><sup>3PM - 6PM</sup></span></h5>
-                    <p lng-tag="17decP">You will arrive at the beautiful Elandskloof Farm. Please check into your unit and enjoy the afternoon at your own leisure.
-                      Feel free to join us at 18:00 when we will be having a ‘Bring & Braai’ at the Boma.
-                      We will provide side dishes and few cold beers but please bring your own meat and some more drinks,
-                      to enjoy the rest of the evening around the fire.</p>
+                    <h5 lng-tag="17decH">Arrival <span class="time"><sup>2PM - 6PM</sup></span></h5>
+                    <p lng-tag="17decP">You’ll arrive at the beautiful Elandskloof. Please check into your cottage and enjoy the afternoon at your own leisure.
+                      Feel free to join us from 18:00 for a ‘Boerie-roll-braai’ at the Boma. We will provide the ‘boerie-rolls’ and a side salad
+                      as well as a few cold beers but feel free to bring your own drinks and enjoy the rest of the evening around the fire.</p>
                 </div>
                 <div class="wp5">
                     <p lng-tag="18dec"><strong>18<sup>th</sup> December</strong></p>
@@ -163,8 +162,8 @@
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                 <div class="wp4">
                     <h5> <span class="time"><sup> </sup></span></h5>
-                    <h5 lng-tag="BigE">The Big Event<span class="time"><sup> (more details to follow)</sup></span></h5>
-                    <p lng-tag="BigEP">We will be posting more details closer to the time...</p>
+                    <h5 lng-tag="BigE">The Big Event<span class="time"><sup> 4PM</sup></span></h5>
+                    <p lng-tag="BigEP">Join us at 4:00 PM to witness the culmination of our love story and the start of a new chapter in our lives.</p>
                 </div>
                 <div class="wp6">
                     <p lng-tag="19dec"><strong>19<sup>th</sup> December</strong></p>
@@ -198,6 +197,22 @@
                         <p lng-tag="dressCodeLP">Not necessary for a ball gown, but here's your time to dress up and look all shnazzy</p>
                         <strong lng-tag="dressCodeG">Gentlemen</strong>
                         <p lng-tag="dressCodeGP">No need to wear a tux, and ties are optional, but no jeans please</p>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="dc2-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="width: 700px;">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScucfIKgRruSymYdjjUZMA6B85TocuL6Wu1QnUkLj2iQWDCQA/viewform?embedded=true" width="640" height="1489" frameborder="0" marginheight="0" marginwidth="0" style="
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 50px;
+">Loading…</iframe>
                 </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
@@ -418,48 +433,10 @@
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div><!-- /.modal -->
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3 lng-tag="waitH">What are you waiting for?</h3>
-                <p lng-tag="waitP">Please RSVP before the 1<sup>st</sup> of May '23</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Names"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group" style="display: none;">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button lng-tag="its me" class="btn-fill rsvp-btn">
-                       Yes,
-                        that's me!
-                    </button>
-                </form>
-            </div>
+        <div class="row" style="
+    padding-top: 30px;
+">
+          <a class="btn btn-accent btn-small" lng-tag="inportante" data-toggle="modal" data-target="#dc2-modal"><i class="fa fa-info"></i>&nbsp;&nbsp;Questionnaire</a>
         </div>
     </div>
 </section>
