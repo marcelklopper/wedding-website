@@ -57,10 +57,10 @@
                             <li><a href="#instagram">Instagram</a></li>
                             <li><a href="#eng-pics" lng-tag="gallery">Gallery</a></li>
                             <li><a lng-tag="infonav" data-toggle="modal" data-target="#faq-modal" href="">Important Info</a></li>
+                            <li><a href="#map" class="login" lng-tag="navmap">MAP</a></li>
                         </ul>
                         <ul class="member-actions">
-                            <li><a href="#map" class="login" lng-tag="navmap">MAP</a></li>
-                            <a href="#" data-toggle="modal" data-target="#dc2-modal" class="btn btn-accent btn-small rsvp-btn">Questionnaire</a>
+                            <a href="#" data-toggle="modal" data-target="#dc2-modal" lng-tag="questionnaire" class="btn btn-accent btn-small rsvp-btn">Questionnaire</a>
                         </ul>
                         <div class="lang-mobile">
                         <div id='toggle-floater'></div>
@@ -95,7 +95,7 @@
         </div>
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><a href="#" data-toggle="modal" data-target="#dc2-modal"
+            <div class="col-sm-4 hidden-xs text-center"><a href="#" lng-tag="questionnaire2" data-toggle="modal" data-target="#dc2-modal"
                                                            class="btn btn-accent btn-large rsvp-btn cst-btn">PLEASE FILL ME IN</a></div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
@@ -219,7 +219,13 @@
     </div><!-- /.modal -->
 
 </section>
-
+    <section>
+        <img style="display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;" src="img/timeline-01.png"></img>
+    </section>
 <section id="video-bg" class="section-padding">
     <div class="video-container">
         <video autoplay="autoplay" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo" data-wf-ignore="true" data-object-fit="cover">
@@ -408,14 +414,11 @@
                                 <p lng-tag="info2">
                                   Accommodation details will be sent out closer to the time.
                                 </p>
-                                <p lng-tag="info0">
-                                  Please note that the accommodation is unfortunately not optional if you attend the wedding, we would greatly appreciate it if you could make payment of R900 per person when you RSVP.
-                                </p>
                                 <p lng-tag="info3">
-                                  Check-in time is on Sunday 14:30 and check-out time will be on Tuesday 12:00.
+                                  Check-in time is on Sunday 14:00 and check-out time will be on Tuesday 12:00.
                                 </p>
                                 <p lng-tag="info4">
-                                  The 'Bring & Braai' on Sunday is completely optional, but we would love to have a chilled evening around the fire with all of you. Although if you would prefer a quiet night in, that's alright too.
+                                  The 'Boerie-roll-braai' on Sunday is completely optional, but we would love to have a chilled evening around the fire with all of you. Although if you would prefer a quiet night in, that's alright too.
                                 </p>
                                 <p lng-tag="info5">
                                   Breakfast and lunch on Monday is self catering. Feel free to use the fridge and kitchen facilities in your unit.
@@ -424,10 +427,7 @@
                                   We kindly request that no photos be taken during the ceremony. We have a brilliant photographer that will cover this part, and we will gladly share all photos taken afterwards.
                                 </p>
                                 <p lng-tag="info7">
-                                  Please note that the nearest town is Greyton, so be sure to pick up your goodies before heading through.
-                                </p>
-                                <p lng-tag="info8">
-                                  Because of the accommodation cost, we do not expect any wedding gifts. Your presence is enough.
+                                  The nearest town is Greyton and is around 40 min away, so be sure to pick up your goodies before heading through.
                                 </p>
                             </div>
                         </div><!-- /.modal-content -->
@@ -436,7 +436,7 @@
         <div class="row" style="
     padding-top: 30px;
 ">
-          <a class="btn btn-accent btn-small" lng-tag="inportante" data-toggle="modal" data-target="#dc2-modal"><i class="fa fa-info"></i>&nbsp;&nbsp;Questionnaire</a>
+          <a class="btn btn-accent btn-small" lng-tag="questionnaire" data-toggle="modal" data-target="#dc2-modal"><i class="fa fa-info"></i>&nbsp;&nbsp;Questionnaire</a>
         </div>
     </div>
 </section>
