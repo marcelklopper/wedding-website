@@ -29,6 +29,22 @@
     margin-right: auto;
     width: 99%;
 }
+.gform {
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .gform {
+    margin-top: -336px;
+    margin-left: -169px;
+    justify-content: center;
+    /* padding-left: 0px; */
+    /* padding-right: 50px; */
+    overflow: hidden;
+    scale: 59%;
+}
 }
 .hideall {
   display: none;
